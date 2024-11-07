@@ -26,7 +26,7 @@ options.add_experimental_option("prefs", {
     "safebrowsing.enabled": True
 })
 options.add_argument("--user-data-dir=/please replace your directory") # profile path
-options.add_argument("--profile-directory=please replace your profile")
+options.add_argument("--profile-directory=please replace your profile name")
 
 # Chromedriverの初期化
 service = Service('/please replace your directory')  # Chromedriverのパスを指定
@@ -56,7 +56,7 @@ def upload_and_download_pdf(file_path):
 
         # ダウンロードリンクが表示されるまで待機(ここでは日英交互を設定。日本語のみに変更したい場合は下記"al"を"ja"にする)
         download_link = WebDriverWait(driver, WAIT_TIME).until(
-            EC.presence_of_element_located((By.XPATH, "//a[contains(@href, 'ja-')]"))
+            EC.presence_of_element_located((By.XPATH, "//a[contains(@href, 'al-')]"))
         )
 
         # ダウンロードリンクのURLを取得してファイルを保存

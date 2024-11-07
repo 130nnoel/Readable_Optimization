@@ -1,5 +1,5 @@
 import os
-from Pypdf2 import PdfReader, PdfWriter
+from PyPDF2 import PdfReader, PdfWriter
 
 def split_pdf_by_pages(input_pdf_path, output_dir, max_pages=100, max_size_mb=50):
     # pdfリーダーでpdfを読み込む

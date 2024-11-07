@@ -50,5 +50,5 @@ def process_pdfs_in_directory(directory_path):
             split_pdf_by_pages(file_path, output_dir)
 
 # 使用例：対象ディレクトリを指定
-directory = "please replace your directory"
+directory = "/please replace your directory"
 process_pdfs_in_directory(directory)
